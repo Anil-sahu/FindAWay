@@ -8,6 +8,8 @@ class NormalController extends GetxController {
 
   getSelect(value) {
     select.value = value;
+    data.clear();
+    isFileter.value = false;
   }
 
   getSelectedList(value) {

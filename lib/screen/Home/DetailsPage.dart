@@ -37,7 +37,7 @@ class _DetailsPageState extends State<DetailsPage> {
                         onPressed: () {},
                         icon: const Icon(Icons.bookmark_outline))
                   ],
-                  expandedHeight: 310.0,
+                  expandedHeight: 320.0,
                   floating: false,
                   pinned: true,
                   title: Text(widget.data['name'],
@@ -123,7 +123,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                   ),
                   bottom: PreferredSize(
-                    preferredSize: const Size(10, 50),
+                    preferredSize: const Size(10, 60),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       color: primaryColor,
@@ -132,7 +132,7 @@ class _DetailsPageState extends State<DetailsPage> {
                         labelColor: secondaryColor,
                         unselectedLabelColor: Colors.grey,
                         indicatorColor: secondaryColor,
-                        indicatorWeight: 5,
+                        indicatorWeight: 3,
                         tabs: const [
                           Tab(text: "About Colleg"),
                           Tab(text: "Hostel Facilty"),

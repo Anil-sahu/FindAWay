@@ -1,8 +1,10 @@
+import 'package:findaway/controller/NormalController.dart';
 import 'package:findaway/screen/Home/HomePage.dart';
 import 'package:findaway/screen/constant/colors.constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -22,7 +24,17 @@ class _MainPageState extends State<MainPage> {
         backgroundColor: secondaryColor,
         title: const Text("Find you own way"),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+          IconButton(
+              onPressed: () {
+                Get.find<NormalController>().getSelect("AAAAAAA");
+              },
+              icon: Obx(() => Get.find<NormalController>().isFileter.value
+                  ? Icon(Icons.close)
+                  : Icon(
+                      Icons.circle,
+                      color: secondaryColor,
+                    ))),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications)),
         ],
       ),
       body: const HomePage(),

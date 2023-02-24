@@ -50,7 +50,7 @@ categoryBottomSheet(context) {
                         trailing: Radio(
                           activeColor: secondaryColor,
                           value: "Batchelor of Engineering",
-                          groupValue: nc.select.value,
+                          groupValue: Get.find<NormalController>().select.value,
                           onChanged: (value) {
                             Get.find<NormalController>().getSelect(value);
                             Get.find<NormalController>().getSelectedList(value);
@@ -68,7 +68,7 @@ categoryBottomSheet(context) {
                         trailing: Radio(
                           activeColor: secondaryColor,
                           value: "Bachelor of Architecture",
-                          groupValue: nc.select.value,
+                          groupValue: Get.find<NormalController>().select.value,
                           onChanged: (value) {
                             Get.find<NormalController>().getSelect(value);
                             Get.find<NormalController>().getSelectedList(value);
@@ -86,7 +86,7 @@ categoryBottomSheet(context) {
                         trailing: Radio(
                           activeColor: secondaryColor,
                           value: "Management",
-                          groupValue: nc.select.value,
+                          groupValue: Get.find<NormalController>().select.value,
                           onChanged: (value) {
                             Get.find<NormalController>().getSelect(value);
                             Get.find<NormalController>().getSelectedList(value);
@@ -104,7 +104,7 @@ categoryBottomSheet(context) {
                         trailing: Radio(
                           activeColor: secondaryColor,
                           value: "pharmacy",
-                          groupValue: nc.select.value,
+                          groupValue: Get.find<NormalController>().select.value,
                           onChanged: (value) {
                             Get.find<NormalController>().getSelect(value);
                             Get.find<NormalController>().getSelectedList(value);
@@ -122,7 +122,7 @@ categoryBottomSheet(context) {
                         trailing: Radio(
                           activeColor: secondaryColor,
                           value: "Law",
-                          groupValue: nc.select.value,
+                          groupValue: Get.find<NormalController>().select.value,
                           onChanged: (value) {
                             Get.find<NormalController>().getSelect(value);
                             Get.find<NormalController>().getSelectedList(value);
