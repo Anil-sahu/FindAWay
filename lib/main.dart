@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Find A Way',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      
       home: MainPage(),
       debugShowCheckedModeBanner: false,
     );
